@@ -1,0 +1,751 @@
+{
+  "usermeta": {
+    "information": {
+      "uuid": "2ff0d19b-607f-46e8-b60c-202647b0e4d4",
+      "generated": "2024-11-22T12:17:50.296Z",
+      "previewImageBase64PNG": "data:image/png;base64,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",
+      "name": "Vertical Multi-Level Sankey Diagram",
+      "description": "[No Description Provided]",
+      "author": "Pha Nguyen"
+    },
+    "deneb": {
+      "build": "1.7.2.1",
+      "metaVersion": 1,
+      "provider": "vega",
+      "providerVersion": "5.30.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "selectionMode": "simple",
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "config": "{}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "category",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__1__",
+        "name": "destination",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__2__",
+        "name": "gap",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      },
+      {
+        "key": "__3__",
+        "name": "labels",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__4__",
+        "name": "sort",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      },
+      {
+        "key": "__5__",
+        "name": "source",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__6__",
+        "name": "stack",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      },
+      {
+        "key": "__7__",
+        "name": "value",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A multi-level vertical Sankey diagram by Pha Nguyen: https://www.linkedin.com/in/pha-nguyen-1528594/, based on Sankey Chart by David Bacci: https://www.linkedin.com/in/davbacci/",
+  "title": {
+    "text": "Amazon's Q3 FY24 Income Statement",
+    "color": "#f58518",
+    "fontSize": 32,
+    "dy": 0,
+    "fontWeight": "bold",
+    "offset": 30
+  },
+  "padding": {
+    "bottom": 20,
+    "left": 20,
+    "right": 30,
+    "top": 40
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "signals": [
+    {
+      "name": "stdgap",
+      "value": 90
+    },
+    {
+      "name": "base",
+      "value": "right"
+    }
+  ],
+  "data": [
+    {
+      "name": "dataset"
+    },
+    {
+      "name": "cat",
+      "source": "dataset"
+    },
+    {
+      "name": "stacks",
+      "source": "cat",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum['__5__'] != null"
+        },
+        {
+          "type": "formula",
+          "as": "end",
+          "expr": "['source', 'destination']"
+        },
+        {
+          "type": "formula",
+          "as": "name",
+          "expr": "[datum['__5__'], datum['__1__']]"
+        },
+        {
+          "type": "project",
+          "fields": [
+            "end",
+            "name",
+            "__7__"
+          ]
+        },
+        {
+          "type": "flatten",
+          "fields": [
+            "end",
+            "name"
+          ]
+        },
+        {
+          "type": "lookup",
+          "from": "cat",
+          "key": "__0__",
+          "values": [
+            "__6__",
+            "__4__",
+            "__2__",
+            "__3__"
+          ],
+          "fields": [
+            "name"
+          ],
+          "as": [
+            "__6__",
+            "__4__",
+            "__2__",
+            "__3__"
+          ]
+        },
+        {
+          "type": "aggregate",
+          "fields": [
+            "__7__",
+            "__6__",
+            "__4__",
+            "__2__",
+            "__3__"
+          ],
+          "groupby": [
+            "end",
+            "name"
+          ],
+          "ops": [
+            "sum",
+            "max",
+            "max",
+            "max",
+            "max"
+          ],
+          "as": [
+            "__7__",
+            "__6__",
+            "__4__",
+            "__2__",
+            "__3__"
+          ]
+        },
+        {
+          "type": "aggregate",
+          "fields": [
+            "__7__",
+            "__6__",
+            "__4__",
+            "__2__",
+            "__3__"
+          ],
+          "groupby": [
+            "name"
+          ],
+          "ops": [
+            "max",
+            "max",
+            "max",
+            "max",
+            "max"
+          ],
+          "as": [
+            "__7__",
+            "__6__",
+            "__4__",
+            "__2__",
+            "__3__"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "__2__",
+          "expr": "datum['__2__'] ? datum['__2__'] : 0"
+        }
+      ]
+    },
+    {
+      "name": "maxValue",
+      "source": "stacks",
+      "transform": [
+        {
+          "type": "aggregate",
+          "fields": [
+            "__7__"
+          ],
+          "groupby": [
+            "__6__"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "__7__"
+          ]
+        },
+        {
+          "type": "aggregate",
+          "fields": [
+            "__7__"
+          ],
+          "ops": [
+            "max"
+          ],
+          "as": [
+            "__7__"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "plottedStacks",
+      "source": "stacks",
+      "transform": [
+        {
+          "type": "formula",
+          "as": "spacer",
+          "expr": "(data('maxValue')[0].value / 100) * (stdgap + datum['__2__'])"
+        },
+        {
+          "type": "formula",
+          "as": "type",
+          "expr": "['data', 'spacer']"
+        },
+        {
+          "type": "formula",
+          "as": "spacedValue",
+          "expr": "[datum['__7__'], datum.spacer]"
+        },
+        {
+          "type": "flatten",
+          "fields": [
+            "type",
+            "spacedValue"
+          ]
+        },
+        {
+          "type": "__6__",
+          "groupby": [
+            "__6__"
+          ],
+          "sort": {
+            "field": "__4__",
+            "order": "descending"
+          },
+          "field": "spacedValue",
+          "offset": {
+            "signal": "base"
+          }
+        },
+        {
+          "type": "formula",
+          "expr": "((datum['__7__']) / 2) + datum.y0",
+          "as": "yc"
+        }
+      ]
+    },
+    {
+      "name": "finalTable",
+      "source": "plottedStacks",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.type == 'data'"
+        }
+      ]
+    },
+    {
+      "name": "linkTable",
+      "source": "cat",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum['__5__'] != null"
+        },
+        {
+          "type": "lookup",
+          "from": "finalTable",
+          "key": "name",
+          "values": [
+            "y0",
+            "y1",
+            "__6__",
+            "__4__"
+          ],
+          "fields": [
+            "__5__"
+          ],
+          "as": [
+            "sourceStacky0",
+            "sourceStacky1",
+            "sourceStack",
+            "sourceSort"
+          ]
+        },
+        {
+          "type": "lookup",
+          "from": "finalTable",
+          "key": "name",
+          "values": [
+            "y0",
+            "y1",
+            "__6__",
+            "__4__"
+          ],
+          "fields": [
+            "__1__"
+          ],
+          "as": [
+            "destinationStacky0",
+            "destinationStacky1",
+            "destinationStack",
+            "destinationSort"
+          ]
+        },
+        {
+          "type": "__6__",
+          "groupby": [
+            "__5__"
+          ],
+          "sort": {
+            "field": "destinationSort",
+            "order": "descending"
+          },
+          "field": "__7__",
+          "offset": "zero",
+          "as": [
+            "syi0",
+            "syi1"
+          ]
+        },
+        {
+          "type": "formula",
+          "expr": "datum.syi0 + datum['sourceStacky0']",
+          "as": "sy0"
+        },
+        {
+          "type": "formula",
+          "expr": "datum.sy0 + datum['__7__']",
+          "as": "sy1"
+        },
+        {
+          "type": "__6__",
+          "groupby": [
+            "__1__"
+          ],
+          "sort": {
+            "field": "sourceSort",
+            "order": "descending"
+          },
+          "field": "__7__",
+          "offset": "zero",
+          "as": [
+            "dyi0",
+            "dyi1"
+          ]
+        },
+        {
+          "type": "formula",
+          "expr": "datum.dyi0 + datum['destinationStacky0']",
+          "as": "dy0"
+        },
+        {
+          "type": "formula",
+          "expr": "datum.dy0 + datum['__7__']",
+          "as": "dy1"
+        },
+        {
+          "type": "formula",
+          "expr": "((datum['__7__']) / 2) + datum.sy0",
+          "as": "syc"
+        },
+        {
+          "type": "formula",
+          "expr": "((datum['__7__']) / 2) + datum.dy0",
+          "as": "dyc"
+        },
+        {
+          "type": "linkpath",
+          "orient": "vertical",
+          "shape": "diagonal",
+          "sourceX": {
+            "expr": "scale('y', datum.syc)"
+          },
+          "sourceY": {
+            "expr": "scale('x', datum['sourceStack']) + bandwidth('x')"
+          },
+          "targetX": {
+            "expr": "scale('y', datum.dyc)"
+          },
+          "targetY": {
+            "expr": "scale('x', datum['destinationStack'])"
+          }
+        },
+        {
+          "type": "formula",
+          "expr": "datum['__1__'] == 'Other costs' ? 2.38 * scale('y', datum['__7__']) : scale('y', datum['__7__'])",
+          "as": "strokeWidth"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "band",
+      "range": "height",
+      "domain": {
+        "data": "finalTable",
+        "field": "__6__"
+      },
+      "paddingInner": 0.88
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "range": "width",
+      "domain": {
+        "data": "finalTable",
+        "field": "y1"
+      },
+      "reverse": false
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "range": {
+        "scheme": "tableau10"
+      },
+      "domain": {
+        "data": "stacks",
+        "field": "name"
+      }
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {
+        "data": "finalTable"
+      },
+      "encode": {
+        "update": {
+          "y": {
+            "scale": "x",
+            "field": "__6__"
+          },
+          "height": {
+            "scale": "x",
+            "band": 1
+          },
+          "x": {
+            "scale": "y",
+            "field": "y0"
+          },
+          "x2": {
+            "scale": "y",
+            "field": "y1"
+          },
+          "fill": {
+            "scale": "color",
+            "field": "name"
+          },
+          "fillOpacity": {
+            "value": 0.75
+          },
+          "strokeWidth": {
+            "value": 0
+          },
+          "stroke": {
+            "scale": "color",
+            "field": "name"
+          }
+        },
+        "hover": {
+          "tooltip": {
+            "signal": "{'Name':datum.name, 'Value':format(datum['__7__'], '$,.0f') + 'M'}"
+          },
+          "fillOpacity": {
+            "value": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "path",
+      "name": "links",
+      "from": {
+        "data": "linkTable"
+      },
+      "clip": true,
+      "encode": {
+        "update": {
+          "strokeWidth": {
+            "field": "strokeWidth"
+          },
+          "path": {
+            "field": "path"
+          },
+          "strokeOpacity": {
+            "signal": "0.3"
+          },
+          "stroke": {
+            "field": "__1__",
+            "scale": "color"
+          }
+        },
+        "hover": {
+          "strokeOpacity": {
+            "value": 1
+          },
+          "tooltip": {
+            "signal": "{'Source':datum['__5__'],'Destination':datum['__1__'], 'Value':format(datum['__7__'], '$,.0f') + 'M'}"
+          }
+        }
+      }
+    },
+    {
+      "type": "group",
+      "name": "labelText",
+      "zindex": 1,
+      "from": {
+        "facet": {
+          "data": "finalTable",
+          "name": "labelFacet",
+          "groupby": [
+            "name",
+            "__6__",
+            "yc",
+            "__7__",
+            "__3__"
+          ]
+        }
+      },
+      "clip": false,
+      "encode": {
+        "update": {
+          "strokeWidth": {
+            "value": 1
+          },
+          "stroke": {
+            "value": "red"
+          },
+          "yc": {
+            "signal": "datum['__3__']=='left'?scale('x', datum['__6__'])-8 : scale('x', datum['__6__']) + (bandwidth('x')) +8"
+          },
+          "x": {
+            "scale": "y",
+            "signal": "datum.yc"
+          },
+          "width": {
+            "signal": "0"
+          },
+          "height": {
+            "signal": "0"
+          },
+          "fillOpacity": {
+            "signal": "0.1"
+          }
+        }
+      },
+      "marks": [
+        {
+          "type": "text",
+          "name": "heading",
+          "from": {
+            "data": "labelFacet"
+          },
+          "encode": {
+            "update": {
+              "y": {
+                "value": 0
+              },
+              "x": {
+                "value": -2
+              },
+              "text": {
+                "field": "name"
+              },
+              "align": {
+                "signal": "datum['__3__']=='left'?'right':'left'"
+              },
+              "fontWeight": {
+                "value": "normal"
+              }
+            }
+          }
+        },
+        {
+          "type": "text",
+          "name": "amount",
+          "from": {
+            "data": "labelFacet"
+          },
+          "encode": {
+            "update": {
+              "x": {
+                "value": 0
+              },
+              "y": {
+                "value": 12
+              },
+              "text": {
+                "signal": " format(datum['__7__'], '$,.0f')+ 'M'"
+              },
+              "align": {
+                "signal": "datum['__3__']=='left'?'right':'left'"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "rect",
+      "from": {
+        "data": "labelText"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "field": "bounds.x1",
+            "offset": -2
+          },
+          "x2": {
+            "field": "bounds.x2",
+            "offset": 2
+          },
+          "y": {
+            "field": "bounds.y1",
+            "offset": -2
+          },
+          "y2": {
+            "field": "bounds.y2",
+            "offset": 2
+          },
+          "fill": {
+            "value": "white"
+          },
+          "opacity": {
+            "value": 0.8
+          },
+          "cornerRadius": {
+            "value": 4
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "data": [
+        {}
+      ],
+      "encode": {
+        "update": {
+          "text": {
+            "value": [
+              "Source: https://ir.aboutamazon.com/news-release/news-release-details/2024/Amazon.com-Announces-Third-Quarter-Results/",
+              "Graphic: Pha Nguyen | Inspiration: David Bacci | Tools: Power BI | Deneb |Vega"
+            ]
+          },
+          "align": {
+            "value": "left"
+          },
+          "lineHeight": {
+            "value": 18
+          },
+          "fill": {
+            "value": "#595959"
+          },
+          "x": {
+            "signal": "-85"
+          },
+          "y": {
+            "signal": "height +55"
+          },
+          "fontSize": {
+            "value": 12
+          }
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": "snow",
+    "view": {
+      "stroke": null
+    },
+    "font": "Outfit"
+  }
+}
