@@ -1,0 +1,567 @@
+{
+  "usermeta": {
+    "information": {
+      "uuid": "a0c9861b-cfb0-4007-9d3a-d6040ef50358",
+      "generated": "2025-02-11T01:03:18.836Z",
+      "previewImageBase64PNG": "data:image/png;base64,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",
+      "name": "WorldMap_AR",
+      "description": "[No Description Provided]",
+      "author": "PHA NGUYEN"
+    },
+    "deneb": {
+      "build": "1.7.2.20240904#411f9c6",
+      "metaVersion": 1,
+      "provider": "vega",
+      "providerVersion": "5.30.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "selectionMode": "simple",
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "config": "{}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Country",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__1__",
+        "name": "Continent",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__2__",
+        "name": "Latitude",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      },
+      {
+        "key": "__3__",
+        "name": "Longitude",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      },
+      {
+        "key": "__4__",
+        "name": "Net Amount Outstanding",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      },
+      {
+        "key": "__5__",
+        "name": "Weighted Average Days Past Due",
+        "description": "",
+        "kind": "column",
+        "type": "numeric"
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A Worldwide Analysis of AR by Pha Nguyen: https://www.linkedin.com/in/pha-nguyen-1528594/",
+  "title": {
+    "text": [
+      "Worldwide Analysis of Accounts Receivable by",
+      "Net Amount and Weighted Average Days Past Due"
+    ],
+    "color": "#ff7f50",
+    "fontSize": 20,
+    "fontWeight": "bold",
+    "dy": 35,
+    "anchor": "middle",
+    "offset": -15
+  },
+  "width": 1080,
+  "height": 1080,
+  "background": "snow",
+  "view": {
+    "stroke": null
+  },
+  "signals": [
+    {
+      "name": "cx",
+      "update": "width / 2"
+    },
+    {
+      "name": "cy",
+      "update": "height / 2"
+    }
+  ],
+  "data": [
+    {
+      "name": "world",
+      "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
+      "format": {
+        "type": "topojson",
+        "feature": "countries"
+      }
+    },
+    {
+      "name": "dataset"
+    },
+    {
+      "name": "trees",
+      "source": "dataset"
+    },
+    {
+      "name": "binned_group",
+      "source": "trees",
+      "transform": [
+        {
+          "type": "formula",
+          "as": "WADPD_group",
+          "expr": "datum['__5__'] < 1 ? 'Current' : datum['__5__'] <= 30 ? '1-30 days past due' : datum['__5__'] <= 60 ? '31-60 days past due' :datum['__5__'] <= 90 ? '61-90 days past due' : datum['__5__'] <= 120 ? '91-120 days past due' : '>120 days past due'"
+        }
+      ]
+    },
+    {
+      "name": "aggregated_binned",
+      "source": "binned_group",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": [
+            "WADPD_group"
+          ],
+          "ops": [
+            "count",
+            "sum"
+          ],
+          "fields": [
+            "__0__",
+            "__4__"
+          ],
+          "as": [
+            "count",
+            "Net Amount"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "AxisXLabels",
+          "expr": "datum.WADPD_group == 'Current' ? datum.WADPD_group : join(slice(split(datum.WADPD_group, ' '), 0, 1), '\\n') + '\\n' + join(slice(split(datum.WADPD_group, ' '), 1, 2), ' ') + ' ' + join(slice(split(datum.WADPD_group, ' '), 2), '\\n')"
+        }
+      ]
+    },
+    {
+      "name": "merged",
+      "source": "trees",
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "binned_group",
+          "key": "__0__",
+          "fields": [
+            "__0__"
+          ],
+          "values": [
+            "WADPD_group"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bar-positions",
+      "source": "binned_group",
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "375",
+          "as": "bar_y"
+        },
+        {
+          "type": "formula",
+          "expr": "scale('xscale', datum.WADPD_group) + (bandwidth('xscale')/4)",
+          "as": "bar_x_mid"
+        }
+      ]
+    },
+    {
+      "name": "trees-location",
+      "source": "merged",
+      "transform": [
+        {
+          "type": "geopoint",
+          "projection": "projection",
+          "fields": [
+            "__3__",
+            "__2__"
+          ],
+          "as": [
+            "proj_x",
+            "proj_y"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "edges",
+      "source": "merged",
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "datum.WADPD_group",
+          "as": "s"
+        },
+        {
+          "type": "formula",
+          "expr": "datum['__0__']",
+          "as": "t"
+        },
+        {
+          "type": "lookup",
+          "from": "bar-positions",
+          "key": "WADPD_group",
+          "fields": [
+            "s"
+          ],
+          "as": [
+            "source"
+          ]
+        },
+        {
+          "type": "lookup",
+          "from": "trees-location",
+          "key": "__0__",
+          "fields": [
+            "t"
+          ],
+          "as": [
+            "target"
+          ]
+        },
+        {
+          "type": "linkpath",
+          "sourceX": "source.bar_x_mid",
+          "sourceY": "source.bar_y",
+          "targetX": "target.proj_x",
+          "targetY": "target.proj_y",
+          "orient": "vertical",
+          "shape": "diagonal"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "type": "sqrt",
+      "name": "size",
+      "domain": {
+        "data": "trees-location",
+        "field": "__4__"
+      },
+      "range": [
+        0.01,
+        0.1
+      ]
+    },
+    {
+      "name": "xscale",
+      "type": "band",
+      "domain": [
+        "Current",
+        "1-30 days past due",
+        "31-60 days past due",
+        "61-90 days past due",
+        "91-120 days past due",
+        ">120 days past due"
+      ],
+      "range": [
+        350,
+        700
+      ],
+      "padding": 0.1
+    },
+    {
+      "name": "yscale",
+      "type": "linear",
+      "domain": {
+        "data": "aggregated_binned",
+        "field": "count"
+      },
+      "nice": true,
+      "range": [
+        375,
+        55
+      ]
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": [
+        "Current",
+        "1-30 days past due",
+        "31-60 days past due",
+        "61-90 days past due",
+        "91-120 days past due",
+        ">120 days past due"
+      ],
+      "range": [
+        "#5aa355",
+        "#a3bd5a",
+        "#f69e41",
+        "#f4d166",
+        "#919c97",
+        "#82715f"
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "type": "mercator",
+      "scale": 125,
+      "translate": [
+        {
+          "signal": "width / 2"
+        },
+        {
+          "signal": "height/1.45"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "shape",
+      "from": {
+        "data": "world"
+      },
+      "encode": {
+        "enter": {
+          "shape": {
+            "value": "sphere"
+          },
+          "stroke": {
+            "value": "white"
+          },
+          "fill": {
+            "value": "#f4f4f4"
+          }
+        }
+      },
+      "transform": [
+        {
+          "type": "geoshape",
+          "projection": "projection"
+        }
+      ]
+    },
+    {
+      "type": "rect",
+      "from": {
+        "data": "aggregated_binned"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "scale": "xscale",
+            "field": "WADPD_group"
+          },
+          "width": {
+            "scale": "xscale",
+            "band": 0.5
+          },
+          "y": {
+            "scale": "yscale",
+            "field": "count"
+          },
+          "y2": {
+            "value": 375
+          },
+          "sort": {
+            "update": {
+              "field": "SortOrder"
+            }
+          },
+          "fill": {
+            "scale": "color",
+            "field": "WADPD_group"
+          },
+          "fillOpacity": {
+            "value": 0.75
+          },
+          "strokeWidth": {
+            "value": 0.45
+          },
+          "strokeOpacity": {
+            "signal": "0.3"
+          }
+        },
+        "hover": {
+          "tooltip": {
+            "signal": "{'WADPD Group': datum.WADPD_group, 'Net Amount' : format(datum['Net Amount'], '$,.0f')  , 'Number of Countries': datum.count}"
+          },
+          "fillOpacity": {
+            "value": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "aggregated_binned"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "scale": "xscale",
+            "field": "WADPD_group",
+            "band": 0.5
+          },
+          "y": {
+            "value": 325
+          },
+          "sort": {
+            "update": {
+              "field": "SortOrder"
+            }
+          },
+          "text": {
+            "signal": "split(datum.AxisXLabels, ' ')"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "top"
+          },
+          "fontSize": {
+            "value": 14
+          },
+          "fill": {
+            "value": "black"
+          },
+          "angle": {
+            "value": 90
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {
+        "data": "trees-location"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "field": "proj_x"
+          },
+          "y": {
+            "field": "proj_y"
+          },
+          "size": {
+            "signal": "pow(3.2 * datum['__4__'], 2)",
+            "scale": "size"
+          },
+          "shape": {
+            "value": "circle"
+          },
+          "fill": {
+            "scale": "color",
+            "field": "WADPD_group"
+          },
+          "fillOpacity": {
+            "value": 0.75
+          },
+          "strokeWidth": {
+            "value": 0.75
+          },
+          "strokeOpacity": {
+            "signal": "0.65"
+          },
+          "stroke": {
+            "field": "WADPD_group",
+            "scale": "color"
+          }
+        },
+        "hover": {
+          "tooltip": {
+            "signal": "{'Country' : datum['__0__'],'Net Amount' : format(datum['__4__'], '$,.0f') , 'WADPD Group': datum.WADPD_group}"
+          },
+          "fillOpacity": {
+            "value": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "path",
+      "from": {
+        "data": "edges"
+      },
+      "clip": true,
+      "encode": {
+        "update": {
+          "strokeWidth": {
+            "value": 1.35
+          },
+          "path": {
+            "field": "path"
+          },
+          "strokeOpacity": {
+            "signal": "0.3"
+          },
+          "stroke": {
+            "field": "WADPD_group",
+            "scale": "color"
+          }
+        },
+        "hover": {
+          "strokeOpacity": {
+            "value": 1
+          },
+          "tooltip": {
+            "signal": "{'Country' : datum['__0__'],'Net Amount' : format(datum['__4__'], '$,.0f'), 'WADPD Group': datum.WADPD_group}"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "data": [
+        {}
+      ],
+      "encode": {
+        "update": {
+          "text": {
+            "value": [
+              "Graphic : Pha Nguyen | Tools: Power BI | Deneb | Vega"
+            ]
+          },
+          "align": {
+            "value": "left"
+          },
+          "lineHeight": {
+            "value": 18
+          },
+          "fill": {
+            "value": "#595959"
+          },
+          "x": {
+            "signal": "-85"
+          },
+          "y": {
+            "signal": "height +55"
+          },
+          "fontSize": {
+            "value": 12
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A Worldwide Analysis of AR by Pha Nguyen: https://www.linkedin.com/in/pha-nguyen-1528594/",
+  "title": {
+    "text": [
+      "Worldwide Analysis of Accounts Receivable by",
+      "Net Amount and Weighted Average Days Past Due"
+    ],
+    "color": "#ff7f50",
+    "fontSize": 20,
+    "fontWeight": "bold",
+    "dy": 35,
+    "anchor": "middle",
+    "offset": -15
+  },
+  "width": 1080,
+  "height": 1080,
+  "background": "snow",
+  "view": {"stroke": null},
+  "signals": [
+    {"name": "cx", "update": "width / 2"},
+    {"name": "cy", "update": "height / 2"}
+  ],
+  "data": [
+    {
+      "name": "world",
+      "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
+      "format": {"type": "topojson", "feature": "countries"}
+    },
+    {
+      "name": "dataset1",
+      "values": [
+        {
+          "Country": "South Africa",
+          "WADPD": 16.59701472,
+          "Net Amount Outstanding": 593446,
+          "Continent": "Africa",
+          "Latitude": -29,
+          "Longitude": 24
+        },
+        {
+          "Country": "Nigeria",
+          "WADPD": -25.0498032,
+          "Net Amount Outstanding": 19055,
+          "Continent": "Africa",
+          "Latitude": 10,
+          "Longitude": 8
+        },
+        {
+          "Country": "Kenya",
+          "WADPD": 106.3033667,
+          "Net Amount Outstanding": 154928,
+          "Continent": "Africa",
+          "Latitude": 1,
+          "Longitude": 38
+        },
+        {
+          "Country": "Egypt",
+          "WADPD": 17.51330185,
+          "Net Amount Outstanding": 8683,
+          "Continent": "Africa",
+          "Latitude": 27,
+          "Longitude": 30
+        },
+        {
+          "Country": "Congo, Democratic Republic",
+          "WADPD": -18,
+          "Net Amount Outstanding": 48285,
+          "Continent": "Africa",
+          "Latitude": 0,
+          "Longitude": 25
+        },
+        {
+          "Country": "Angola",
+          "WADPD": -0.727425687,
+          "Net Amount Outstanding": 35660,
+          "Continent": "Africa",
+          "Latitude": -12.5,
+          "Longitude": 18.5
+        },
+        {
+          "Country": "Algeria",
+          "WADPD": 162.0589056,
+          "Net Amount Outstanding": 14328,
+          "Continent": "Africa",
+          "Latitude": 28,
+          "Longitude": 3
+        },
+        {
+          "Country": "Uruguay",
+          "WADPD": 29,
+          "Net Amount Outstanding": 11606,
+          "Continent": "America",
+          "Latitude": -33,
+          "Longitude": -56
+        },
+        {
+          "Country": "United States",
+          "WADPD": 9.464008165,
+          "Net Amount Outstanding": 14388896.23,
+          "Continent": "America",
+          "Latitude": 38,
+          "Longitude": -97
+        },
+        {
+          "Country": "Peru",
+          "WADPD": 2.546046491,
+          "Net Amount Outstanding": 91071,
+          "Continent": "America",
+          "Latitude": -10,
+          "Longitude": -76
+        },
+        {
+          "Country": "Panama",
+          "WADPD": 44.51679005,
+          "Net Amount Outstanding": 112895.44,
+          "Continent": "America",
+          "Latitude": 9,
+          "Longitude": -80
+        },
+        {
+          "Country": "Mexico",
+          "WADPD": 34.85956777,
+          "Net Amount Outstanding": 1698103.86,
+          "Continent": "America",
+          "Latitude": 23,
+          "Longitude": -102
+        },
+        {
+          "Country": "Guyana",
+          "WADPD": 89,
+          "Net Amount Outstanding": 41856,
+          "Continent": "America",
+          "Latitude": 5,
+          "Longitude": -59
+        },
+        {
+          "Country": "Guatemala",
+          "WADPD": -19,
+          "Net Amount Outstanding": 28342,
+          "Continent": "America",
+          "Latitude": 15.5,
+          "Longitude": -90.25
+        },
+        {
+          "Country": "Chile",
+          "WADPD": -1.18762154,
+          "Net Amount Outstanding": 237473.8,
+          "Continent": "America",
+          "Latitude": -30,
+          "Longitude": -71
+        },
+        {
+          "Country": "Canada",
+          "WADPD": 30.46662827,
+          "Net Amount Outstanding": 5267807.14,
+          "Continent": "America",
+          "Latitude": 60,
+          "Longitude": -95
+        },
+        {
+          "Country": "Brazil",
+          "WADPD": 38.27156667,
+          "Net Amount Outstanding": 908001.37,
+          "Continent": "America",
+          "Latitude": -10,
+          "Longitude": -55
+        },
+        {
+          "Country": "United Arab Emirates",
+          "WADPD": 49.91280646,
+          "Net Amount Outstanding": 577084,
+          "Continent": "Asia",
+          "Latitude": 24,
+          "Longitude": 54
+        },
+        {
+          "Country": "Thailand",
+          "WADPD": 38.1282019,
+          "Net Amount Outstanding": 281961.5,
+          "Continent": "Asia",
+          "Latitude": 15,
+          "Longitude": 100
+        },
+        {
+          "Country": "Singapore",
+          "WADPD": 26.52255009,
+          "Net Amount Outstanding": 1115876.85,
+          "Continent": "Asia",
+          "Latitude": 1.3667,
+          "Longitude": 103.8
+        },
+        {
+          "Country": "Saudi Arabia",
+          "WADPD": 26.18918352,
+          "Net Amount Outstanding": 100125,
+          "Continent": "Asia",
+          "Latitude": 25,
+          "Longitude": 45
+        },
+        {
+          "Country": "Japan",
+          "WADPD": 36.14874788,
+          "Net Amount Outstanding": 1829855.63,
+          "Continent": "Asia",
+          "Latitude": 36,
+          "Longitude": 138
+        },
+        {
+          "Country": "Israel",
+          "WADPD": 39.14349203,
+          "Net Amount Outstanding": 836597,
+          "Continent": "Asia",
+          "Latitude": 31.5,
+          "Longitude": 34.75
+        },
+        {
+          "Country": "Indonesia",
+          "WADPD": -20.18384344,
+          "Net Amount Outstanding": 124586.44,
+          "Continent": "Asia",
+          "Latitude": -5,
+          "Longitude": 120
+        },
+        {
+          "Country": "India",
+          "WADPD": 40.05081156,
+          "Net Amount Outstanding": 2040894,
+          "Continent": "Asia",
+          "Latitude": 20,
+          "Longitude": 77
+        },
+        {
+          "Country": "Hong Kong",
+          "WADPD": 32.81493093,
+          "Net Amount Outstanding": 361384,
+          "Continent": "Asia",
+          "Latitude": 22.25,
+          "Longitude": 114.1667
+        },
+        {
+          "Country": "China",
+          "WADPD": 62.05869159,
+          "Net Amount Outstanding": 451615,
+          "Continent": "Asia",
+          "Latitude": 35,
+          "Longitude": 105
+        },
+        {
+          "Country": "United Kingdom",
+          "WADPD": 30.44285316,
+          "Net Amount Outstanding": 7711403.32,
+          "Continent": "Europe",
+          "Latitude": 54,
+          "Longitude": -2
+        },
+        {
+          "Country": "Turkey",
+          "WADPD": 42.24202632,
+          "Net Amount Outstanding": 106538,
+          "Continent": "Europe",
+          "Latitude": 39,
+          "Longitude": 35
+        },
+        {
+          "Country": "Sweden",
+          "WADPD": 7.353542192,
+          "Net Amount Outstanding": 194964,
+          "Continent": "Europe",
+          "Latitude": 62,
+          "Longitude": 15
+        },
+        {
+          "Country": "Spain",
+          "WADPD": 16.16655388,
+          "Net Amount Outstanding": 289636,
+          "Continent": "Europe",
+          "Latitude": 40,
+          "Longitude": -4
+        },
+        {
+          "Country": "Netherlands",
+          "WADPD": 37.18480952,
+          "Net Amount Outstanding": 1043983,
+          "Continent": "Europe",
+          "Latitude": 52.5,
+          "Longitude": 5.75
+        },
+        {
+          "Country": "Luxembourg",
+          "WADPD": 18.42408607,
+          "Net Amount Outstanding": 179664,
+          "Continent": "Europe",
+          "Latitude": 49.75,
+          "Longitude": 6.1667
+        },
+        {
+          "Country": "Italy",
+          "WADPD": 75.69886272,
+          "Net Amount Outstanding": 297904,
+          "Continent": "Europe",
+          "Latitude": 42.8333,
+          "Longitude": 12.8333
+        },
+        {
+          "Country": "Germany",
+          "WADPD": 25.21800579,
+          "Net Amount Outstanding": 1018317,
+          "Continent": "Europe",
+          "Latitude": 51,
+          "Longitude": 9
+        },
+        {
+          "Country": "France",
+          "WADPD": 31.3394758,
+          "Net Amount Outstanding": 1501502.94,
+          "Continent": "Europe",
+          "Latitude": 46,
+          "Longitude": 2
+        },
+        {
+          "Country": "Denmark",
+          "WADPD": 10.23637014,
+          "Net Amount Outstanding": 338503,
+          "Continent": "Europe",
+          "Latitude": 56,
+          "Longitude": 10
+        },
+        {
+          "Country": "Czech Republic",
+          "WADPD": 23.72467164,
+          "Net Amount Outstanding": 359360,
+          "Continent": "Europe",
+          "Latitude": 49.75,
+          "Longitude": 15.5
+        },
+        {
+          "Country": "New Zealand",
+          "WADPD": 38.49803261,
+          "Net Amount Outstanding": 330896,
+          "Continent": "Oceania",
+          "Latitude": -41,
+          "Longitude": 174
+        },
+        {
+          "Country": "Australia",
+          "WADPD": 32.21752891,
+          "Net Amount Outstanding": 3211707.85,
+          "Continent": "Oceania",
+          "Latitude": -27,
+          "Longitude": 133
+        }
+      ]
+    },
+    {"name": "trees", "source": "dataset1"},
+    {
+      "name": "binned_group",
+      "source": "trees",
+      "transform": [
+        {
+          "type": "formula",
+          "as": "WADPD_group",
+          "expr": "datum['WADPD'] < 1 ? 'Current' : datum['WADPD'] <= 30 ? '1-30 days past due' : datum['WADPD'] <= 60 ? '31-60 days past due' :datum['WADPD'] <= 90 ? '61-90 days past due' : datum['WADPD'] <= 120 ? '91-120 days past due' : '>120 days past due'"
+        }
+      ]
+    },
+    {
+      "name": "aggregated_binned",
+      "source": "binned_group",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": ["WADPD_group"],
+          "ops": ["count", "sum"],
+          "fields": ["Country", "Net Amount Outstanding"],
+          "as": ["count", "Net Amount"]
+        },
+        {
+          "type": "formula",
+          "as": "AxisXLabels",
+          "expr": "datum.WADPD_group == 'Current' ? datum.WADPD_group : join(slice(split(datum.WADPD_group, ' '), 0, 1), '\\n') + '\\n' + join(slice(split(datum.WADPD_group, ' '), 1, 2), ' ') + ' ' + join(slice(split(datum.WADPD_group, ' '), 2), '\\n')"
+        }
+      ]
+    },
+    {
+      "name": "merged",
+      "source": "trees",
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "binned_group",
+          "key": "Country",
+          "fields": ["Country"],
+          "values": ["WADPD_group"]
+        }
+      ]
+    },
+    {
+      "name": "bar-positions",
+      "source": "binned_group",
+      "transform": [
+        {"type": "formula", "expr": "375", "as": "bar_y"},
+        {
+          "type": "formula",
+          "expr": "scale('xscale', datum.WADPD_group) + (bandwidth('xscale')/4)",
+          "as": "bar_x_mid"
+        }
+      ]
+    },
+    {
+      "name": "trees-location",
+      "source": "merged",
+      "transform": [
+        {
+          "type": "geopoint",
+          "projection": "projection",
+          "fields": ["Longitude", "Latitude"],
+          "as": ["proj_x", "proj_y"]
+        }
+      ]
+    },
+    {
+      "name": "edges",
+      "source": "merged",
+      "transform": [
+        {"type": "formula", "expr": "datum.WADPD_group", "as": "s"},
+        {"type": "formula", "expr": "datum['Country']", "as": "t"},
+        {
+          "type": "lookup",
+          "from": "bar-positions",
+          "key": "WADPD_group",
+          "fields": ["s"],
+          "as": ["source"]
+        },
+        {
+          "type": "lookup",
+          "from": "trees-location",
+          "key": "Country",
+          "fields": ["t"],
+          "as": ["target"]
+        },
+        {
+          "type": "linkpath",
+          "sourceX": "source.bar_x_mid",
+          "sourceY": "source.bar_y",
+          "targetX": "target.proj_x",
+          "targetY": "target.proj_y",
+          "orient": "vertical",
+          "shape": "diagonal"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "type": "sqrt",
+      "name": "size",
+      "domain": {"data": "trees-location", "field": "Net Amount Outstanding"},
+      "range": [0.01, 0.1]
+    },
+    {
+      "name": "xscale",
+      "type": "band",
+      "domain": [
+        "Current",
+        "1-30 days past due",
+        "31-60 days past due",
+        "61-90 days past due",
+        "91-120 days past due",
+        ">120 days past due"
+      ],
+      "range": [350, 700],
+      "padding": 0.1
+    },
+    {
+      "name": "yscale",
+      "type": "linear",
+      "domain": {"data": "aggregated_binned", "field": "count"},
+      "nice": true,
+      "range": [375, 55]
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": [
+        "Current",
+        "1-30 days past due",
+        "31-60 days past due",
+        "61-90 days past due",
+        "91-120 days past due",
+        ">120 days past due"
+      ],
+      "range": [
+        "#5aa355",
+        "#a3bd5a",
+        "#f69e41",
+        "#f4d166",
+        "#919c97",
+        "#82715f"
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "type": "mercator",
+      "scale": 125,
+      "translate": [{"signal": "width / 2"}, {"signal": "height/1.45"}]
+    }
+  ],
+  "marks": [
+    {
+      "type": "shape",
+      "from": {"data": "world"},
+      "encode": {
+        "enter": {
+          "shape": {"value": "sphere"},
+          "stroke": {"value": "white"},
+          "fill": {"value": "#f4f4f4"}
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
+    },
+    {
+      "type": "rect",
+      "from": {"data": "aggregated_binned"},
+      "encode": {
+        "update": {
+          "x": {"scale": "xscale", "field": "WADPD_group"},
+          "width": {"scale": "xscale", "band": 0.5},
+          "y": {"scale": "yscale", "field": "count"},
+          "y2": {"value": 375},
+          "sort": {"update": {"field": "SortOrder"}},
+          "fill": {"scale": "color", "field": "WADPD_group"},
+          "fillOpacity": {"value": 0.75},
+          "strokeWidth": {"value": 0.45},
+          "strokeOpacity": {"signal": "0.3"}
+        },
+        "hover": {
+          "tooltip": {
+            "signal": "{'WADPD Group': datum.WADPD_group, 'Net Amount' : format(datum['Net Amount'], '$,.0f')  , 'Number of Countries': datum.count}"
+          },
+          "fillOpacity": {"value": 1}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "aggregated_binned"},
+      "encode": {
+        "update": {
+          "x": {"scale": "xscale", "field": "WADPD_group", "band": 0.5},
+          "y": {"value": 325},
+          "sort": {"update": {"field": "SortOrder"}},
+          "text": {"signal": "split(datum.AxisXLabels, ' ')"},
+          "align": {"value": "center"},
+          "baseline": {"value": "top"},
+          "fontSize": {"value": 14},
+          "fill": {"value": "black"},
+          "angle": {"value": 90}
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {"data": "trees-location"},
+      "encode": {
+        "update": {
+          "x": {"field": "proj_x"},
+          "y": {"field": "proj_y"},
+          "size": {
+            "signal": "pow(3.2 * datum['Net Amount Outstanding'], 2)",
+            "scale": "size"
+          },
+          "shape": {"value": "circle"},
+          "fill": {"scale": "color", "field": "WADPD_group"},
+          "fillOpacity": {"value": 0.75},
+          "strokeWidth": {"value": 0.75},
+          "strokeOpacity": {"signal": "0.65"},
+          "stroke": {"field": "WADPD_group", "scale": "color"}
+        },
+        "hover": {
+          "tooltip": {
+            "signal": "{'Country' : datum['Country'],'Net Amount' : format(datum['Net Amount Outstanding'], '$,.0f') , 'WADPD Group': datum.WADPD_group}"
+          },
+          "fillOpacity": {"value": 1}
+        }
+      }
+    },
+    {
+      "type": "path",
+      "from": {"data": "edges"},
+      "clip": true,
+      "encode": {
+        "update": {
+          "strokeWidth": {"value": 1.35},
+          "path": {"field": "path"},
+          "strokeOpacity": {"signal": "0.3"},
+          "stroke": {"field": "WADPD_group", "scale": "color"}
+        },
+        "hover": {
+          "strokeOpacity": {"value": 1},
+          "tooltip": {
+            "signal": "{'Country' : datum['Country'],'Net Amount' : format(datum['Net Amount Outstanding'], '$,.0f'), 'WADPD Group': datum.WADPD_group}"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "data": [{}],
+      "encode": {
+        "update": {
+          "text": {
+            "value": ["Graphic : Pha Nguyen | Tools: Power BI | Deneb | Vega"]
+          },
+          "align": {"value": "left"},
+          "lineHeight": {"value": 18},
+          "fill": {"value": "#595959"},
+          "x": {"signal": "-85"},
+          "y": {"signal": "height +55"},
+          "fontSize": {"value": 12}
+        }
+      }
+    }
+  ],
+  "config": {}
+}
